@@ -167,3 +167,7 @@ def create_plots(value_grid, policy_grid, title: str):
 value_grid, policy_grid = create_grids(agent, usable_ace=True)
 fig1 = create_plots(value_grid, policy_grid, title='With Usable Ace')
 plt.show()
+
+value_grid, policy_grid = create_grids(agent, usable_ace=False)
+fig2 = create_plots(value_grid, policy_grid, title='Without Usable Ace')
+plt.show()
